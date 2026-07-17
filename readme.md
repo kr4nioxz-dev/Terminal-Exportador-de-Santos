@@ -1,6 +1,3 @@
-![Stars](https://img.shields.io/github/stars/kr4nioxz-dev/Terminal-Exportador-de-Santos?style=for-the-badge&logo=github&cacheSeconds=0)
-![Visitors](https://img.shields.io/endpoint?url=https://hits.dwyl.com/kr4nioxz-dev/Terminal-Exportador-de-Santos.json&style=for-the-badge&label=VISITORS)
-
 ---
 
 <h1 align="center">TES - TERMINAL EXPORTADOR DE SANTOS</h1>
