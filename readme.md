@@ -84,7 +84,7 @@ Este projeto usa 2 pastas:
 
 `Prefixo de Ano` Todas as versões começam com o ano atual **(por exemplo, se o ano for 2026, começará com: 26.**
 
-`Mudança de Ano` Quando o ano virar, a numeração acompanhará essa mudança **(exemplo: 26.1.1, 27.1.1).**
+`Mudança de Ano` Quando o ano virar, a o prefixo acompanhará essa mudança **(exemplo: 26.1.1, 27.1.1).**
 
 `Número da Atualização` O segundo dígito indica qual é a grande atualização daquele ano **(exemplo: 26.1.1, 26.2.1).**
 
@@ -100,4 +100,4 @@ Este projeto usa 2 pastas:
 
 ---
 
-![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.2.4-blue?style=for-the-badge&logo=git)
+![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.2.5-blue?style=for-the-badge&logo=git)
