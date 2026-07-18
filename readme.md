@@ -52,7 +52,7 @@ Este projeto usa 3 arquivos:
 
 Acesse clicando no link **REAL** do site a seguir: www.tessantos.com.br
 
-Ou acesse meu projeto pessoal abrindo o arquivo `index.html` no chrome.
+Ou acesse o projeto desse repositório abrindo o arquivo `index.html` no chrome.
 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
