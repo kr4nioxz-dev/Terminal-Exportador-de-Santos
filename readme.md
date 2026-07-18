@@ -1,4 +1,4 @@
----
+
 
 <h1 align="center"> TES - Terminal Exportador de Santos</h1>
 
@@ -98,14 +98,12 @@ Exemplo: 26.1.1, 26.2.1
 
 Exemplo: 26.1.1, 26.1.2
 
-----
+---
 
 > ***Nota Importante:***
 >
 > Os dados institucionais e históricos foram redigidos de forma original a partir de informações públicas do Terminal Exportador de Santos. Os indicadores declaram explicitamente que os números são históricos publicados até o ano de 2022.
 > 
 > **Este projeto foi desenvolvido com fins educacionais, visando a prática e o aprimoramento de conhecimentos em desenvolvimento web.**
-
-----
 
 ![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.2.5-blue?style=for-the-badge&logo=git)
