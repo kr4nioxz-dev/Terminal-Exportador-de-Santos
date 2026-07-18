@@ -66,4 +66,4 @@ Ou acesse o projeto desse repositório abrindo o arquivo `index.html` no chrome.
 
 ---
 
-![Version](https://img.shields.io/badge/Version-v26.2.1-blue?style=for-the-badge&logo=git)
+![Version](https://img.shields.io/badge/Version-v26.3.1-blue?style=for-the-badge&logo=git)
