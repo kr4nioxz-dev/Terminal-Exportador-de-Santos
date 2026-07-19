@@ -1,6 +1,7 @@
----
 
-<h1 align="center"> TES - Terminal Exportador de Santos</h1>
+![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.3.5-blue?style=for-the-badge&logo=git)
+
+<h1 align="center">TES - Terminal Exportador de Santos</h1>
 
 ---
 
@@ -82,13 +83,21 @@ Este projeto usa 2 pastas:
 
 ## Lógica das Versões
 
-`Prefixo de Ano` Todas as versões começam com o ano atual **(por exemplo, se o ano for 2026, começará com: 26.**
+`Prefixo de Ano` **Todas as versões começam com o ano atual.**
 
-`Mudança de Ano` Quando o ano virar, a numeração acompanhará essa mudança **(exemplo: 26.1.1, 27.1.1).**
+- Exemplo: **ano = 2026; prefixo = 26**
 
-`Número da Atualização` O segundo dígito indica qual é a grande atualização daquele ano **(exemplo: 26.1.1, 26.2.1).**
+`Mudança de Ano` **Quando o ano virar, a o prefixo acompanhará essa mudança.**
 
-`Correção / Melhoria` O terceiro dígito serve para pequenos ajustes ou correções **(exemplo: 26.1.1, 26.1.2).**
+- Exemplo: **26.1.1, 27.1.1**
+
+`Número da Atualização` **O segundo dígito indica qual é a grande atualização daquele ano.**
+
+- Exemplo: **26.1.1, 26.2.1**
+
+`Correção / Melhoria` **O terceiro dígito serve para pequenos ajustes ou correções.**
+
+- Exemplo: **26.1.1, 26.1.2**
 
 ---
 
@@ -97,7 +106,3 @@ Este projeto usa 2 pastas:
 > Os dados institucionais e históricos foram redigidos de forma original a partir de informações públicas do Terminal Exportador de Santos. Os indicadores declaram explicitamente que os números são históricos publicados até o ano de 2022.
 > 
 > **Este projeto foi desenvolvido com fins educacionais, visando a prática e o aprimoramento de conhecimentos em desenvolvimento web.**
-
----
-
-![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.3.4-blue?style=for-the-badge&logo=git)
