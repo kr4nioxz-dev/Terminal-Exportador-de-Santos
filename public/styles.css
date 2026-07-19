@@ -48,6 +48,16 @@ button {cursor: pointer;}
 
 img {max-width: 100%;}
 
+.image-stack-main {
+   position: absolute;
+   inset: 0 1.2rem 1.5rem 0;
+   border-radius: var(--radius-2xl);
+   width: calc(100% - 1.2rem);
+   height: calc(100% - 1.5rem);
+   object-fit: cover;
+   box-shadow: var(--shadow-card);
+}
+
 .container {width: min(100% - 2rem, 75rem); margin-inline: auto;}
 
 .section {position: relative; padding-block: var(--section-space); overflow: clip;}
@@ -113,8 +123,6 @@ img {max-width: 100%;}
 }
 
 .site-header.is-scrolled .brand-mark {color: var(--ocean-700);}
-
-.brand-mark svg {width: 1.55rem; height: 1.55rem;}
 
 .brand-copy {display: grid; gap: .17rem;}
 
@@ -229,7 +237,7 @@ img {max-width: 100%;}
    position: absolute;
    z-index: -3;
    inset: 0;
-   background: linear-gradient(90deg, rgba(4, 22, 43, .94) 0%, rgba(5, 35, 60, .86) 45%, rgba(2, 52, 80, .52) 100%), linear-gradient(0deg, rgba(4, 19, 37, .43), transparent 40%), url("fotos/tessantos.png") center/cover;
+   background: linear-gradient(90deg, rgba(4, 22, 43, .94) 0%, rgba(5, 35, 60, .86) 45%, rgba(2, 52, 80, .52) 100%), linear-gradient(0deg, rgba(4, 19, 37, .43), transparent 40%), url("assets/photos/tessantos.png") center/cover;
 }
 
 .hero::before {
@@ -668,11 +676,11 @@ h1 em, h2 em {color: var(--aqua-300); font-style: normal;}
 
 .modal-card:hover::after {transform: scale(1.06);}
 
-.modal-card-road::after {background-image: url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80");}
+.modal-card-road::after {background-image: url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=");}
 
-.modal-card-rail::after {background-image: url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80");}
+.modal-card-rail::after {background-image: url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=");}
 
-.modal-card-sea::after {background-image: url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=900&q=80");}
+.modal-card-sea::after {background-image: url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=");}
 
 .modal-card-icon {
    display: grid;
