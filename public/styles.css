@@ -1,25 +1,27 @@
 /* =====================================================================
-     1. Tokens
-     2. Reset & Base
-     3. Utilitários (container, section, sr-only)
-     4. Header + Menu
-     5. Hero
-     6. Credenciais
-     7. Quem Somos
-     8. Movimentação
-     9. Info Técnica (process)
-    10. Missão, Visão e Valores (pilares)
-    11. Princípios Éticos
-    12. Links Úteis
-    13. Como Chegar (mapa)
-    14. Política do SIG
-    15. Contato
-    16. Rodapé
-    17. Back-to-top + Reveal + Keyframes
-    18. Breakpoints
+    Tokens
+    Reset & Base
+    Utilitários (container, section, sr-only)
+    Imagens e Fotos
+    Botões
+    Header + Menu
+    Hero
+    Credenciais
+    Quem Somos
+    Movimentação
+    Info Técnica (process)
+    Missão, Visão e Valores (pilares)
+    Princípios Éticos
+    Links Úteis
+    Como Chegar (mapa)
+    Política do SIG
+    Contato
+    Rodapé
+    Back-to-top + Reveal + Keyframes
+    Breakpoints
    ===================================================================== */
 
-/* 1. Tokens ---------------------------------------------------------- */
+/* Tokens ---------------------------------------------------------- */
 :root {
   --ink-950: #061b33;
   --ink-900: #082844;
@@ -54,7 +56,7 @@
   color-scheme: light;
 }
 
-/* 2. Reset & Base --------------------------------------------------- */
+/* Reset & Base --------------------------------------------------- */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
 html {
@@ -84,7 +86,7 @@ h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-family: var(--font-display); letter-spacing: -.045em; line-height: 1.08; }
 h1 em, h2 em { color: var(--aqua-300); font-style: normal; }
 
-/* 3. Utilitários ---------------------------------------------------- */
+/* Utilitários ---------------------------------------------------- */
 .container { width: min(100% - 2rem, 75rem); margin-inline: auto; }
 .section   { position: relative; padding-block: var(--section-space); overflow: clip; }
 .sr-only {
@@ -121,6 +123,32 @@ h1 em, h2 em { color: var(--aqua-300); font-style: normal; }
 .text-link span { font-size: 1.2em; transition: transform .2s ease; }
 .text-link:hover span, .text-link:focus-visible span { transform: translateX(4px); }
 
+/* PROVISÓRIO */
+.brand-mark {
+  display: grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  place-items: center;
+  overflow: hidden;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  isolation: isolate;
+  mix-blend-mode: normal;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+.brand-mark img, 
+.brand-mark svg {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: none !important; 
+}
+
 /* Botões ------------------------------------------------------------ */
 .button {
   display: inline-flex; align-items: center; justify-content: center;
@@ -150,7 +178,7 @@ h1 em, h2 em { color: var(--aqua-300); font-style: normal; }
 .button-dark:hover, .button-dark:focus-visible { background: var(--ocean-900); }
 .button-small { min-height: 2.7rem; padding: .65rem .87rem; font-size: .76rem; }
 
-/* 4. Header -------------------------------------------------------- */
+/* Header -------------------------------------------------------- */
 .site-header {
   position: fixed; z-index: 100; top: 0; left: 0; width: 100%;
   color: var(--white);
@@ -165,12 +193,7 @@ h1 em, h2 em { color: var(--aqua-300); font-style: normal; }
 .header-shell { display: flex; align-items: center; min-height: 5.25rem; gap: 1.25rem; }
 
 .brand { display: inline-flex; flex: 0 0 auto; align-items: center; gap: .65rem; line-height: 1; }
-.brand-mark {
-  display: grid; width: 2.45rem; height: 2.45rem; place-items: center;
-  color: var(--aqua-300); background: rgba(255,255,255,.08);
-  border-radius: 50%; font-family: var(--font-display); font-weight: 800;
-  border: 1px solid rgba(255,255,255,.25);
-}
+
 .site-header.is-scrolled .brand-mark {
   color: var(--ocean-700); background: var(--sky-100); border-color: var(--line);
 }
@@ -228,7 +251,7 @@ h1 em, h2 em { color: var(--aqua-300); font-style: normal; }
 .mobile-menu a:hover, .mobile-menu a:focus-visible { color: var(--ocean-700); background: var(--sky-100); }
 .mobile-menu a:last-child { margin-top: .3rem; color: var(--white); background: var(--ocean-700); }
 
-/* 5. Hero ---------------------------------------------------------- */
+/* Hero ---------------------------------------------------------- */
 .hero {
   display: grid; min-height: 46rem; padding-top: 7.8rem;
   color: var(--white); background: var(--ink-950);
@@ -240,6 +263,12 @@ h1 em, h2 em { color: var(--aqua-300); font-style: normal; }
     linear-gradient(90deg, rgba(4,22,43,.94) 0%, rgba(5,35,60,.86) 45%, rgba(2,52,80,.52) 100%),
     radial-gradient(1200px 600px at 80% 20%, rgba(0,169,157,.35), transparent 60%),
     linear-gradient(160deg, #061b33 0%, #073b65 100%);
+}
+.hero-media-img {
+  position: absolute;
+  z-index: -3;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(4, 22, 43, .94) 0%, rgba(5, 35, 60, .86) 45%, rgba(2, 52, 80, .52) 100%), linear-gradient(0deg, rgba(4, 19, 37, .43), transparent 40%), url("assets/photos/tessantos.png") center/cover;
 }
 .hero::before {
   position: absolute; z-index: -2; top: -22rem; right: -17rem;
@@ -305,7 +334,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .route-road { top: 57%; left: 14%; width: 76%; transform: rotate(-12deg); } .route-road::after { left: 8%; }
 .route-sea  { top: 84%; left: 28%; width: 65%; transform: rotate(-31deg); } .route-sea::after { right: 14%; }
 
-/* 6. Credenciais --------------------------------------------------- */
+/* Credenciais --------------------------------------------------- */
 .credentials { position: relative; z-index: 2; margin-top: -1px; padding-block: 1.2rem; color: var(--ink-950); background: var(--aqua-300); }
 .credentials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 1rem; }
 .credential { display: flex; align-items: center; gap: .65rem; min-width: 0; }
@@ -324,7 +353,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .icon-archive::before, .icon-silo::before { position: absolute; top: 34%; right: 15%; left: 15%; height: 1px; background: currentColor; content: ""; }
 .icon-archive::after { position: absolute; top: 0; right: 21%; left: 21%; height: 3px; background: var(--aqua-300); border: 1.5px solid currentColor; border-radius: .3rem; content: ""; }
 
-/* 7. Quem Somos --------------------------------------------------- */
+/* Quem Somos --------------------------------------------------- */
 .intro-grid, .contact-layout { display: grid; gap: 3rem; align-items: center; }
 .intro-copy { max-width: 34rem; }
 .intro-copy > p:not(.eyebrow) { color: var(--muted); }
@@ -337,6 +366,15 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
     var(--gradient-ocean);
   box-shadow: var(--shadow-card);
   overflow: hidden;
+}
+.image-stack-main {
+  position: absolute;
+  inset: 0 .2rem 1.5rem 0;
+  border-radius: var(--radius-2xl);
+  width: calc(100%);
+  height: calc(100%);
+  object-fit: cover;
+  box-shadow: var(--shadow-card);
 }
 .image-stack::after {
   content: ""; position: absolute; inset: 0;
@@ -355,7 +393,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .image-stack-card strong { max-width: 14ch; font-family: var(--font-display); font-size: 1.05rem; letter-spacing: -.035em; line-height: 1.25; }
 .image-stack-card i { position: absolute; right: 1rem; bottom: 1rem; color: var(--aqua-300); font-size: 1.2rem; font-style: normal; }
 
-/* 8. Movimentação ------------------------------------------------- */
+/* Movimentação ------------------------------------------------- */
 .movement { color: var(--white); background: var(--ink-950); }
 .movement-bg {
   position: absolute; z-index: 0; right: -12rem; bottom: -18rem;
@@ -394,7 +432,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .chart-bar span { font-size: .62rem; font-weight: 700; }
 .chart-bar b { color: rgba(255,255,255,.63); font-size: .55rem; font-weight: 500; white-space: nowrap; }
 
-/* 9. Info Técnica (process) --------------------------------------- */
+/* Info Técnica (process) --------------------------------------- */
 .operation { background: var(--surface); }
 .process { margin-top: 1.1rem; padding: 1.35rem; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-xl); }
 .process-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
@@ -408,7 +446,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .process-steps b { font-size: .83rem; }
 .process-steps small { color: var(--muted); font-size: .7rem; }
 
-/* 10. Missão, Visão e Valores (pilares) --------------------------- */
+/* Missão, Visão e Valores (pilares) --------------------------- */
 .pillars { background: var(--white); }
 .pillars-heading { max-width: 42rem; }
 .pillars-heading h2 { max-width: 14ch; }
@@ -456,7 +494,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .pillar-featured p { color: rgba(255,255,255,.78); }
 .pillar-featured .pillar-icon { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25); }
 
-/* 11. Princípios Éticos ------------------------------------------- */
+/* Princípios Éticos ------------------------------------------- */
 .ethics { background: var(--surface); }
 .ethics-grid {
   display: grid; grid-template-columns: 1fr; gap: 1rem;
@@ -501,7 +539,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .ethics-banner h3 { margin-bottom: .33rem; color: var(--ink-950); font-size: 1.18rem; }
 .ethics-banner p:not(.card-kicker) { margin-bottom: 0; color: var(--muted); font-size: .8rem; }
 
-/* 12. Links Úteis -------------------------------------------------- */
+/* Links Úteis -------------------------------------------------- */
 .useful-links { background: var(--white); }
 .link-grid {
   display: grid; grid-template-columns: 1fr; gap: 1rem;
@@ -536,7 +574,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
   transform: rotate(-45deg);
 }
 
-/* 13. Como Chegar (mapa) ------------------------------------------ */
+/* Como Chegar (mapa) ------------------------------------------ */
 .location { background: var(--ink-950); color: var(--white); }
 .location h2 { color: var(--white); }
 .location .section-heading > p:last-child { color: rgba(255,255,255,.72); }
@@ -583,7 +621,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
   100% { r: 30; opacity: 0; }
 }
 
-/* 14. Política do SIG --------------------------------------------- */
+/* Política do SIG --------------------------------------------- */
 .sig { background: var(--white); }
 .sig-intro {
   padding: 1.4rem 1.5rem; margin-bottom: 2rem;
@@ -615,7 +653,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .sig-card-body b { display: block; font-family: var(--font-display); font-size: 1rem; color: var(--ink-950); margin-bottom: .25rem; }
 .sig-card-body p { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.55; }
 
-/* 15. Contato ----------------------------------------------------- */
+/* Contato ----------------------------------------------------- */
 .contact { color: var(--white); background: linear-gradient(130deg, #061b33, #073c64); position: relative; }
 .contact::before {
   position: absolute; top: -17rem; left: -20rem;
@@ -657,7 +695,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
 .form-submit .button { min-width: 10rem; }
 .form-submit p { max-width: 18rem; margin: 0; color: var(--teal-500); font-size: .68rem; font-weight: 600; line-height: 1.4; }
 
-/* 16. Rodapé ----------------------------------------------------- */
+/* Rodapé ----------------------------------------------------- */
 .site-footer { padding-top: 3.25rem; color: rgba(255,255,255,.72); background: #041525; }
 .footer-grid { display: grid; gap: 2.5rem; padding-bottom: 2.5rem; }
 .site-footer .brand { color: var(--white); }
@@ -676,7 +714,7 @@ address { display: grid; gap: .3rem; font-style: normal; font-size: .7rem; line-
   color: rgba(255,255,255,.45); font-size: .58rem;
 }
 
-/* 17. Back-to-top + Reveal + Keyframes --------------------------- */
+/* Back-to-top + Reveal + Keyframes --------------------------- */
 .back-to-top {
   position: fixed; z-index: 70; right: 1rem; bottom: 1rem;
   display: grid; width: 2.7rem; height: 2.7rem; place-items: center;
@@ -700,7 +738,7 @@ address { display: grid; gap: .3rem; font-style: normal; font-size: .7rem; line-
   from { transform: translateX(-120%); } to { transform: translateX(320%); }
 }
 
-/* 18. Breakpoints ------------------------------------------------- */
+/* Breakpoints ------------------------------------------------- */
 @media (min-width: 33rem) {
   .credentials-grid { grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
   .credential { align-items: flex-start; }
