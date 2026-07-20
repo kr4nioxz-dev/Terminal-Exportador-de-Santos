@@ -26,7 +26,7 @@ Este projeto usa 3 arquivos:
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5 logo" />
     </td>
     <td>
-      <strong>HTML5</strong> - HyperText Markup Language<br>
+      <strong>HTML5</strong><br>
       <code>index.html</code> Contém toda a estrutura e o conteúdo da página.
     </td>
   </tr>
@@ -36,7 +36,7 @@ Este projeto usa 3 arquivos:
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3 logo" />
     </td>
     <td>
-      <strong>CSS3</strong> - Cascading Style Sheets<br>
+      <strong>CSS3</strong><br>
       <code>styles.css</code> Contém toda a aparência: cores, fontes, animações etc.
     </td>
   </tr>
