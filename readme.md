@@ -1,5 +1,5 @@
 
-![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.7.8-blue?style=for-the-badge&logo=git)
+![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.7.9-blue?style=for-the-badge&logo=git)
 
 <h1 align="center">TES - Terminal Exportador de Santos</h1>
 
@@ -15,7 +15,34 @@ Ou acesse o projeto desse repositório abrindo o arquivo `index.html` no chrome.
 
 ---
 
-## Estrutura Principal do Sistema
+## Estruturas Principais do Sistema
+
+Pastas principais:
+
+<table>
+
+<tr>
+  <td width="50" align="center" style="font-size: 32px;">
+    🌐
+  </td>
+  <td>
+    <strong>Arquivos Estáticos</strong><br>
+    <code>public/</code> Reúne todos os arquivos públicos acessados.
+</tr>
+
+<tr>
+  <td width="50" align="center" style="font-size: 32px;">
+    ⚙️
+  </td>
+  <td>
+    <strong>Código-Fonte</strong><br>
+    <code>src/</code> Reúne todo o código-fonte da aplicação.
+  </td>
+</tr>
+
+</table>
+
+Arquivos principais:
 
 <table>
   
@@ -25,7 +52,7 @@ Ou acesse o projeto desse repositório abrindo o arquivo `index.html` no chrome.
     </td>
     <td>
       <strong>HTML5</strong><br>
-      <code>index.html</code> Contém toda a estrutura e o conteúdo da página.
+      <code>public/index.html</code> Contém toda a estrutura e o conteúdo da página.
     </td>
   </tr>
 
@@ -35,7 +62,7 @@ Ou acesse o projeto desse repositório abrindo o arquivo `index.html` no chrome.
     </td>
     <td>
       <strong>CSS3</strong><br>
-      <code>styles.css</code> Contém toda a aparência: cores, fontes, animações etc.
+      <code>public/styles.css</code> Contém toda a aparência: cores, fontes, animações etc.
     </td>
   </tr>
 
@@ -45,36 +72,46 @@ Ou acesse o projeto desse repositório abrindo o arquivo `index.html` no chrome.
     </td>
     <td>
       <strong>JavaScript</strong><br>
-      <code>script.js</code> Contém todo o comportamento: menu mobile, formulário etc.
+      <code>public/script.js</code> Contém todo o comportamento: menu mobile, formulário etc.
     </td>
+  </tr>
+
+  <tr>
+    <td width="50" align="center">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="TypeScript logo" />
+    </td>
+    <td>
+      <strong>TypeScript</strong><br>
+      <code>src/script.ts</code> Contém tipagem estática ao JavaScript.
+    </td> 
   </tr>
 
 </table>
 
-Este projeto usa 2 pastas:
+Recursos principais:
 
 <table>
 
 <tr>
-  <td width="50" align="center" style="font-size: 32px;">
-    📁
+  <td width="50" align="center">
+    📸
   </td>
   <td>
     <strong>Photos</strong><br>
-    <code>public/assets/photos/</code> Contém todas as fotos usadas no site.
+    <code>public/assets/photos/</code> Contém todas as fotos utilizadas no site.
   </td>
 </tr>
 
 <tr>
-  <td width="50" align="center" style="font-size: 32px;">
-    📁
+  <td width="50" align="center">
+    🖼️
   </td>
   <td>
     <strong>Images</strong><br>
-    <code>public/assets/images/</code> Contém todas as imagens usadas no site.
+    <code>public/assets/images/</code> Contém todas as imagens utilizadas no site.
   </td>
 </tr>
-  
+
 </table>
 
 ---
