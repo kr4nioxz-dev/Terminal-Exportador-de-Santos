@@ -1,5 +1,5 @@
 
-![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.4.6-blue?style=for-the-badge&logo=git)
+![Versão](https://img.shields.io/badge/Vers%C3%A3o-v26.7.7-blue?style=for-the-badge&logo=git)
 
 <h1 align="center">TES - Terminal Exportador de Santos</h1>
 
@@ -63,7 +63,7 @@ Este projeto usa 2 pastas:
   </td>
   <td>
     <strong>Photos</strong><br>
-    <code>assets/photos/</code> Contém todas as fotos usadas no site.
+    <code>public/assets/photos/</code> Contém todas as fotos usadas no site.
   </td>
 </tr>
 
@@ -73,7 +73,7 @@ Este projeto usa 2 pastas:
   </td>
   <td>
     <strong>Images</strong><br>
-    <code>assets/images/</code> Contém todas as imagens usadas no site.
+    <code>public/assets/images/</code> Contém todas as imagens usadas no site.
   </td>
 </tr>
   
@@ -98,6 +98,8 @@ Este projeto usa 2 pastas:
 `Correção / Melhoria` **O terceiro dígito serve para pequenos ajustes ou correções.**
 
 - Exemplo: **26.1.1, 26.1.2**
+
+Obs.: Se o prefixo de ano virar, o resto dos dígitos retorna a 1.
 
 ---
 
