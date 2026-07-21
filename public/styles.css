@@ -166,7 +166,13 @@ h1 em, h2 em { color: var(--aqua-300); font-style: normal; }
 }
 .header-shell { display: flex; align-items: center; min-height: 5.25rem; gap: 1.25rem; }
 
-.brand { display: inline-flex; flex: 0 0 auto; align-items: center; gap: .65rem; line-height: 1; }
+.brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: .65rem;
+  line-height: 1;
+}
 
 .site-header.is-scrolled .brand-mark {
   color: var(--ocean-700); background: var(--sky-100); border-color: var(--line);
