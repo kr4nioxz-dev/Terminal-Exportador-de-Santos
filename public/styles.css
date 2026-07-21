@@ -488,6 +488,7 @@ h1 { max-width: 9.5ch; margin-bottom: 1.35rem; font-size: clamp(3rem, 7vw, 6.3re
   border-color: transparent;
 }
 .pillar-featured .pillar-tag { color: var(--aqua-300); }
+.pillar-featured .text-link-light {position: relative; z-index: 5; }
 .pillar-featured h3 { color: var(--white); }
 .pillar-featured p { color: rgba(255,255,255,.78); }
 .pillar-featured .pillar-icon { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25); }
